@@ -1,7 +1,8 @@
 .nav-bar-container {
+  z-index: 10;
   position: fixed;
   width: 100%;
-  margin: 10px -20px 0 -20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,12 +12,24 @@
   }
 }
 
-.slides {
-  position: relative;
+.slides-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   height: 100vh;
   width: 100vw;
-  margin: -20px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.slides {
+  position: relative;
   scroll-snap-align: start;
+  height: 100vh;
 
   .slide-one-container {
     display: flex;
@@ -37,6 +50,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    opacity: 0;
 
     .tagline {
       font-size: calc(max(4vw, 2.5rem));
@@ -49,6 +63,10 @@
       font-size: calc(max(4vw, 2rem));
       text-align: center;
       width: 70%;
+    }
+
+    &.active {
+      opacity: 1;
     }
   }
 }
