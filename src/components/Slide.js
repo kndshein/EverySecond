@@ -36,7 +36,7 @@ const variants = {
   },
 };
 
-const SlideTwo = (props) => {
+const Slide = (props) => {
   const [setRef, visible] = useOnScreen({ threshold: 0.9 });
   return (
     <div className="slides">
@@ -64,4 +64,4 @@ const SlideTwo = (props) => {
   );
 };
 
-export default SlideTwo;
+export default Slide;

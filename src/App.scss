@@ -116,14 +116,15 @@ body {
         .icons-container {
           display: flex;
           justify-content: center;
+          align-content: flex-start;
           flex-flow: row wrap;
           width: 50%;
-          height: 200px;
+          height: 250px;
           overflow: hidden;
 
           .icon {
             width: calc(max(5vw, 30px));
-            margin-bottom: 10px;
+            margin-bottom: calc(max(2vw, 10px));
           }
         }
       }
