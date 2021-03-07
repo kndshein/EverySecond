@@ -65,7 +65,7 @@ body {
   }
 
   .slides {
-    // position: relative;
+    position: relative;
     scroll-snap-align: start;
     height: 100vh;
 
@@ -74,11 +74,48 @@ body {
       justify-content: center;
       align-items: center;
       height: 100%;
+      color: white;
 
-      .tagline {
-        font-size: calc(max(4vw, 2.5rem));
-        text-align: center;
-        width: 70%;
+      .taglines-container {
+        z-index: 5;
+        position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: white;
+
+        .tagline {
+          font-family: $title-font;
+          // margin-bottom: 50px;
+          font-size: calc(max(5vw, 3rem));
+          text-align: center;
+          width: 50%;
+        }
+
+        .tagline-2 {
+          font-size: calc(max(3vw, 2rem));
+          text-transform: none;
+          text-align: center;
+          width: 80%;
+        }
+      }
+
+      .background-image {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        img {
+          z-index: -1;
+          flex-grow: 1;
+          object-fit: cover;
+        }
       }
     }
 
