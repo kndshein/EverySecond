@@ -35,6 +35,7 @@ body {
     gap: 15px;
     font-family: $title-font;
     font-size: calc(max(2vw, 1rem));
+    text-align: center;
 
     .divider {
       display: inline-block;
@@ -87,19 +88,43 @@ body {
         height: 100%;
         color: white;
 
-        .tagline {
-          font-family: $title-font;
-          // margin-bottom: 50px;
-          font-size: calc(max(5vw, 3rem));
-          text-align: center;
-          width: 50%;
+        .taglines-container-container {
+          margin-top: 100px;
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+
+          .tagline {
+            // display: flex;
+            justify-content: center;
+            font-family: $title-font;
+            font-size: calc(max(6vw, 3rem));
+            text-align: center;
+            width: 60%;
+          }
+
+          .tagline-2 {
+            margin-top: 10px;
+            font-size: calc(max(4vw, 2rem));
+            text-transform: none;
+            text-align: center;
+            width: 80%;
+          }
         }
 
-        .tagline-2 {
-          font-size: calc(max(3vw, 2rem));
-          text-transform: none;
-          text-align: center;
-          width: 80%;
+        .icons-container {
+          display: flex;
+          justify-content: center;
+          flex-flow: row wrap;
+          width: 50%;
+          height: 200px;
+          overflow: hidden;
+
+          .icon {
+            width: calc(max(5vw, 30px));
+            margin-bottom: 10px;
+          }
         }
       }
 

@@ -40,6 +40,7 @@ body {
   gap: 15px;
   font-family: utopia-std-subhead, serif;
   font-size: calc(max(2vw, 1rem));
+  text-align: center;
 }
 
 .nav-bar-container .logo-container .divider {
@@ -109,18 +110,60 @@ body {
   color: white;
 }
 
-.slides-container .slides .slide-one-container .taglines-container .tagline {
-  font-family: utopia-std-subhead, serif;
-  font-size: calc(max(5vw, 3rem));
-  text-align: center;
-  width: 50%;
+.slides-container .slides .slide-one-container .taglines-container .taglines-container-container {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.slides-container .slides .slide-one-container .taglines-container .tagline-2 {
-  font-size: calc(max(3vw, 2rem));
+.slides-container .slides .slide-one-container .taglines-container .taglines-container-container .tagline {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: utopia-std-subhead, serif;
+  font-size: calc(max(6vw, 3rem));
+  text-align: center;
+  width: 60%;
+}
+
+.slides-container .slides .slide-one-container .taglines-container .taglines-container-container .tagline-2 {
+  margin-top: 10px;
+  font-size: calc(max(4vw, 2rem));
   text-transform: none;
   text-align: center;
   width: 80%;
+}
+
+.slides-container .slides .slide-one-container .taglines-container .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slides-container .slides .slide-one-container .taglines-container .icons-container .icon {
+  width: calc(max(5vw, 30px));
+  margin-bottom: 10px;
 }
 
 .slides-container .slides .slide-one-container .background-image {

@@ -6,6 +6,8 @@ import SlideOne from "./components/SlideOne";
 import SlideTwo from "./components/SlideTwo";
 
 function App() {
+  // const [content, setContent] = React.useState({});
+
   return (
     <div className="App">
       <Nav />
