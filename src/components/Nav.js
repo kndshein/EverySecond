@@ -5,7 +5,11 @@ const Nav = (props) => {
   return (
     <div className="nav-bar-container">
       <MdKeyboardArrowLeft size={40} />
-      <div className="logo">Every Second | Suicide Prevention</div>
+      <div className="logo-container">
+        <div className="logo">Every Second</div>
+        <div className="divider"></div>{" "}
+        <div className="logo-tagline">Suicide Prevention</div>
+      </div>
       <MdKeyboardArrowRight size={40} />
     </div>
   );
