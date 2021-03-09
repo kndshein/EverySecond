@@ -23,7 +23,7 @@ const SlideOne = ({ content }) => {
     };
 
     const item = {
-      hidden: { display: "none", opacity: 0 },
+      hidden: { opacity: 0 },
       show: {
         display: "block",
         opacity: 1,
@@ -71,8 +71,8 @@ const SlideOne = ({ content }) => {
               animate="show"
             >
               {num.map((x, index) => (
-                <motion.div variants={item}>
-                  <MdPersonPinCircle key={index} size={50} className="icon" />
+                <motion.div variants={item} key={index}>
+                  <MdPersonPinCircle size={50} className="icon" />
                 </motion.div>
               ))}
             </motion.div>

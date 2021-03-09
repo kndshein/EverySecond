@@ -4,7 +4,7 @@ import "./styles/App.css";
 import Nav from "./components/Nav";
 import SlideOne from "./components/SlideOne";
 import SlideTwo from "./components/SlideTwo";
-import SlideThree from "./components/SlideThree";
+// import SlideThree from "./components/SlideThree";
 
 function App() {
   const [content, setContent] = React.useState(null);
@@ -26,9 +26,9 @@ function App() {
       <div className="slides-container">
         <SlideOne content={content} />
         <SlideTwo />
-        <SlideThree />
-        <SlideThree />
-        <SlideThree />
+        {/* <SlideThree /> */}
+        {/* <SlideThree /> */}
+        {/* <SlideThree /> */}
       </div>
     </div>
   );

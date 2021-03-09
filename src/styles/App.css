@@ -193,6 +193,7 @@ body {
 .slide-two-container {
   position: relative;
   height: 100%;
+  color: white;
 }
 
 .slide-two-container .taglines-container {
@@ -217,15 +218,43 @@ body {
 }
 
 .slide-two-container .taglines-container .tagline {
-  margin-bottom: 50px;
-  font-size: calc(max(3vw, 2rem));
+  margin-bottom: 4vw;
+  font-size: calc(max(3vw, 1.5rem));
   width: 50%;
 }
 
 .slide-two-container .taglines-container .tagline-2 {
   font-family: utopia-std-subhead, serif;
-  font-size: calc(max(5vw, 3rem));
+  font-size: calc(max(5vw, 2.5rem));
   width: 50%;
+}
+
+.slide-two-container .icons-container {
+  position: absolute;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100vh;
+  padding: 70px 30px 30px 30px;
+}
+
+.slide-two-container .icons-container .icon-container .icon {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  opacity: 0.5;
+  width: 100%;
 }
 
 .slide-two-container .background-image {
@@ -248,5 +277,25 @@ body {
           flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-two-container .taglines-container {
+    width: 100%;
+    padding: 70px 20px 20px 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slide-two-container .taglines-container .tagline,
+  .slide-two-container .taglines-container .tagline-2 {
+    text-align: center;
+    width: 75%;
+  }
+  .slide-two-container .icons-container {
+    left: 0;
+    padding: 70px 20px 20px 20px;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

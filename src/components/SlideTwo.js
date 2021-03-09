@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+// import { MdPersonPinCircle } from "react-icons/md";
 
 function useOnScreen(options) {
   const [ref, setRef] = React.useState(null);
@@ -36,7 +37,12 @@ const variants = {
   },
 };
 
-const Slide = (props) => {
+const SlideTwo = (props) => {
+  var num = [],
+    i = 0,
+    len = 1000;
+  while (++i <= len) num.push(i);
+
   const [setRef, visible] = useOnScreen({ threshold: 0.9 });
   return (
     <div className="slides">
@@ -53,6 +59,40 @@ const Slide = (props) => {
           </div>
           <div className="tagline-2">that's 4 attempts every 1000 adults</div>
         </div>
+        <div className="icons-container">
+          {num.map((x, index) => {
+            if (index > num.length - 5) {
+              return (
+                <div
+                  className="icon-container"
+                  style={{ width: "min(3vw,15px)" }}
+                  key={index}
+                >
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png"
+                    key={index}
+                    alt="human symbol"
+                    className="icon"
+                    style={{ opacity: "1" }}
+                  />
+                </div>
+              );
+            }
+            return (
+              <div
+                className="icon-container"
+                style={{ width: "min(3vw,15px)" }}
+                key={index}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png"
+                  alt="human symbol"
+                  className="icon"
+                />
+              </div>
+            );
+          })}
+        </div>
         <div className="background-image">
           <img
             src="https://images.unsplash.com/photo-1615027138404-06f31c35ae1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
@@ -64,4 +104,4 @@ const Slide = (props) => {
   );
 };
 
-export default Slide;
+export default SlideTwo;
