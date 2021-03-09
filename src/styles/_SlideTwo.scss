@@ -1,0 +1,43 @@
+.slide-two-container {
+  position: relative;
+  height: 100%;
+
+  .taglines-container {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: white;
+
+    .tagline {
+      margin-bottom: 50px;
+      font-size: calc(max(3vw, 2rem));
+      width: 50%;
+    }
+
+    .tagline-2 {
+      font-family: $title-font;
+      font-size: calc(max(5vw, 3rem));
+      width: 50%;
+    }
+  }
+
+  .background-image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    img {
+      z-index: -1;
+      flex-grow: 1;
+      object-fit: cover;
+    }
+  }
+}

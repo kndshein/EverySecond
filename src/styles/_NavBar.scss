@@ -1,0 +1,31 @@
+.nav-bar-container {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  .logo-container {
+    display: flex;
+    gap: 15px;
+    font-family: $title-font;
+    font-size: calc(max(2vw, 1rem));
+    text-align: center;
+
+    .divider {
+      display: inline-block;
+      content: "";
+      height: inherit;
+      width: 3px;
+      background-color: white;
+    }
+
+    .logo-tagline {
+      font-family: $body-font;
+      // font-weight: 500;
+    }
+  }
+}
