@@ -32,8 +32,50 @@ const variants = {
   animate: {
     opacity: 1,
     transition: {
-      delay: 0.5,
+      duration: 2,
+      delay: 0,
     },
+  },
+};
+
+const taglineOneVariants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 2,
+    },
+  },
+};
+
+const taglineTwoVariants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: {
+      duration: 2,
+      delay: 4,
+    },
+  },
+};
+
+const iconsVariantsContainer = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 1,
+      delayChildren: 2,
+    },
+  },
+};
+
+const iconsVariantsChild = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { duration: 0.5, ease: "easeOut" },
   },
 };
 
@@ -54,10 +96,22 @@ const SlideTwo = (props) => {
         ref={setRef}
       >
         <div className="taglines-container">
-          <div className="tagline">
+          <motion.div
+            variants={taglineOneVariants}
+            initial="initial"
+            animate={visible ? "animate" : "initial"}
+            className="tagline"
+          >
             1.4 million adults in the United States attempted suicide in 2019
-          </div>
-          <div className="tagline-2">that's 4 attempts every 1000 adults</div>
+          </motion.div>
+          <motion.div
+            variants={taglineTwoVariants}
+            initial="initial"
+            animate={visible ? "animate" : "initial"}
+            className="tagline-2"
+          >
+            that's 4 attempts every 1000 adults
+          </motion.div>
         </div>
         <div className="icons-container">
           {num.map((x, index) => {

@@ -25,7 +25,6 @@ const SlideOne = ({ content }) => {
     const item = {
       hidden: { opacity: 0 },
       show: {
-        display: "block",
         opacity: 1,
         transition: { duration: 2.6, ease: "easeOut" },
       },
@@ -37,7 +36,7 @@ const SlideOne = ({ content }) => {
           <motion.div
             className="taglines-container"
             animate={{ opacity: [0, 1] }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
           >
             <motion.div
               className="taglines-container-container"
