@@ -61,29 +61,29 @@ const taglineTwoVariants = {
 };
 
 const iconsVariantsContainer = {
-  hidden: { opacity: 0 },
-  show: {
+  initial: { opacity: 0 },
+  animate: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.01,
+      staggerChildren: 0.007,
+      delayChildren: 6,
       ease: "easeOut",
     },
   },
 };
 
 const iconsVariantsChild = {
-  hidden: { opacity: 0 },
-  show: {
+  initial: { opacity: 0 },
+  animate: {
     opacity: 1,
-    transition: { duration: 0.02, ease: "easeOut" },
   },
 };
 
 const iconsVariantsChildFocus = {
-  hidden: { opacity: 0 },
-  show: {
+  initial: { opacity: 0 },
+  animate: {
     opacity: 1,
-    transition: { duration: 0.02, ease: "easeOut" },
+    transition: { duration: 1, ease: "easeOut" },
   },
 };
 
@@ -105,7 +105,6 @@ const SlideTwo = (props) => {
         <div className="taglines-container">
           <motion.div
             variants={taglineOneVariants}
-            initial="initial"
             animate={visible ? "animate" : "initial"}
             className="tagline"
           >
@@ -113,7 +112,6 @@ const SlideTwo = (props) => {
           </motion.div>
           <motion.div
             variants={taglineTwoVariants}
-            initial="initial"
             animate={visible ? "animate" : "initial"}
             className="tagline-2"
           >
@@ -122,15 +120,15 @@ const SlideTwo = (props) => {
         </div>
         <motion.div
           variants={iconsVariantsContainer}
-          initial="hidden"
-          animate="show"
+          initial="initial"
+          animate={visible ? "animate" : "initial"}
           className="icons-container"
         >
           {num.map((x, index) => {
             if (index > num.length - 5) {
               return (
                 <motion.div
-                  variants={iconsVariantsChild}
+                  variants={iconsVariantsChildFocus}
                   className="icon-container"
                   style={{ width: "min(3vw,15px)" }}
                   key={index}
@@ -163,7 +161,7 @@ const SlideTwo = (props) => {
         </motion.div>
         <div className="background-image">
           <img
-            src="https://images.unsplash.com/photo-1615027138404-06f31c35ae1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
             alt="poop"
           />
         </div>
