@@ -41,7 +41,8 @@ const SlideOne = ({ content }) => {
           >
             <motion.div
               className="taglines-container-container"
-              animate={{ y: -50 }}
+              initial={{ y: 50 }}
+              animate={{ y: -25 }}
               transition={{ duration: 1, delay: 1.5 }}
             >
               <div className="tagline">

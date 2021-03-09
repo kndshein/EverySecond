@@ -89,7 +89,7 @@ body {
         color: white;
 
         .taglines-container-container {
-          margin-top: 100px;
+          margin: 100px 0 50px 0;
           display: flex;
           flex-flow: column nowrap;
           justify-content: center;
@@ -156,22 +156,20 @@ body {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 50%;
         height: 100%;
         color: white;
 
         .tagline {
           margin-bottom: 50px;
           font-size: calc(max(3vw, 2rem));
-          text-align: center;
           width: 50%;
         }
 
         .tagline-2 {
           font-family: $title-font;
           font-size: calc(max(5vw, 3rem));
-          text-align: center;
-          width: 80%;
+          width: 50%;
         }
       }
 

@@ -111,7 +111,7 @@ body {
 }
 
 .slides-container .slides .slide-one-container .taglines-container .taglines-container-container {
-  margin-top: 100px;
+  margin: 100px 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
   color: white;
 }
@@ -219,15 +219,13 @@ body {
 .slides-container .slides .slide-two-container .taglines-container .tagline {
   margin-bottom: 50px;
   font-size: calc(max(3vw, 2rem));
-  text-align: center;
   width: 50%;
 }
 
 .slides-container .slides .slide-two-container .taglines-container .tagline-2 {
   font-family: utopia-std-subhead, serif;
   font-size: calc(max(5vw, 3rem));
-  text-align: center;
-  width: 80%;
+  width: 50%;
 }
 
 .slides-container .slides .slide-two-container .background-image {

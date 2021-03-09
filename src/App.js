@@ -1,9 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 
 import Nav from "./components/Nav";
 import SlideOne from "./components/SlideOne";
-import Slide from "./components/Slide";
+import SlideTwo from "./components/SlideTwo";
+import SlideThree from "./components/SlideThree";
 
 function App() {
   const [content, setContent] = React.useState(null);
@@ -24,10 +25,10 @@ function App() {
       <Nav content={content} />
       <div className="slides-container">
         <SlideOne content={content} />
-        <Slide />
-        <Slide />
-        <Slide />
-        <Slide />
+        <SlideTwo />
+        <SlideThree />
+        <SlideThree />
+        <SlideThree />
       </div>
     </div>
   );
