@@ -256,7 +256,7 @@ body {
           align-items: center;
   width: 50%;
   height: 100vh;
-  padding: 100px 30px 30px 30px;
+  padding: 100px 30px 30px 0;
 }
 
 .slide-two-container .icons-container .icon-container .icon {

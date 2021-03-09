@@ -32,7 +32,7 @@ const variants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1,
       delay: 0,
     },
   },
@@ -65,7 +65,7 @@ const iconsVariantsContainer = {
   animate: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.007,
+      staggerChildren: 0.005,
       delayChildren: 6,
       ease: "easeOut",
     },
