@@ -65,8 +65,8 @@ const iconsVariantsContainer = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 1,
-      delayChildren: 2,
+      staggerChildren: 0.01,
+      ease: "easeOut",
     },
   },
 };
@@ -75,7 +75,15 @@ const iconsVariantsChild = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.02, ease: "easeOut" },
+  },
+};
+
+const iconsVariantsChildFocus = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { duration: 0.02, ease: "easeOut" },
   },
 };
 
@@ -90,7 +98,6 @@ const SlideTwo = (props) => {
     <div className="slides">
       <motion.div
         variants={variants}
-        initial="initial"
         animate={visible ? "animate" : "initial"}
         className="slide-two-container"
         ref={setRef}
@@ -113,11 +120,17 @@ const SlideTwo = (props) => {
             that's 4 attempts every 1000 adults
           </motion.div>
         </div>
-        <div className="icons-container">
+        <motion.div
+          variants={iconsVariantsContainer}
+          initial="hidden"
+          animate="show"
+          className="icons-container"
+        >
           {num.map((x, index) => {
             if (index > num.length - 5) {
               return (
-                <div
+                <motion.div
+                  variants={iconsVariantsChild}
                   className="icon-container"
                   style={{ width: "min(3vw,15px)" }}
                   key={index}
@@ -129,11 +142,12 @@ const SlideTwo = (props) => {
                     className="icon"
                     style={{ opacity: "1" }}
                   />
-                </div>
+                </motion.div>
               );
             }
             return (
-              <div
+              <motion.div
+                variants={iconsVariantsChild}
                 className="icon-container"
                 style={{ width: "min(3vw,15px)" }}
                 key={index}
@@ -143,10 +157,10 @@ const SlideTwo = (props) => {
                   alt="human symbol"
                   className="icon"
                 />
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
         <div className="background-image">
           <img
             src="https://images.unsplash.com/photo-1615027138404-06f31c35ae1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
