@@ -75,7 +75,7 @@ const SlideTwo = (props) => {
       opacity: 1,
       transition: {
         staggerChildren: 0.002,
-        delayChildren: 5,
+        delayChildren: 5.5,
         ease: "easeOut",
       },
     },
@@ -93,7 +93,7 @@ const SlideTwo = (props) => {
     animate: {
       opacity: 1,
       x: 0,
-      transition: { duration: 2, ease: "easeOut" },
+      transition: { duration: 3, delay: 5.5, ease: "easeOut" },
     },
   };
 
