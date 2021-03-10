@@ -27,7 +27,7 @@ function useOnScreen(options) {
   return [setRef, visible];
 }
 
-const SlideFour = (props) => {
+const SlideFour = ({ content }) => {
   const [setRef, visible] = useOnScreen({ threshold: 0.5 });
 
   const variants = {
@@ -98,16 +98,15 @@ const SlideFour = (props) => {
             <motion.div variants={resourcesVariantsChild} className="resource">
               <div className="title">Educate Yourself</div>
               <ul>
-                <li>
-                  <a
-                    href="https://save.org/about-suicide/warning-signs-risk-factors-protective-factors/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Suicide awareness voices of education{" "}
-                    <FiExternalLink className="link" />
-                  </a>
-                </li>
+                {content?.SlideFour.educate.map((ele, index) => {
+                  return (
+                    <li>
+                      <a href={`${ele.link}`} target="_blank" rel="noreferrer">
+                        {ele.name} <FiExternalLink className="link" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
             <motion.div variants={resourcesVariantsChild} className="resource">

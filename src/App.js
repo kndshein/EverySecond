@@ -55,7 +55,13 @@ function App() {
         },
       },
       SlideFour: {
-        educate: ["poop"],
+        educate: [
+          {
+            name: "Suicide Awareness Voices of Education",
+            link:
+              "https://save.org/about-suicide/warning-signs-risk-factors-protective-factors/",
+          },
+        ],
       },
     };
 
