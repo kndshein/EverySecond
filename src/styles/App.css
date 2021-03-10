@@ -134,14 +134,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: utopia-std-subhead, serif;
-  font-size: calc(max(6vw, 3rem));
+  font-size: calc(max(4vw, 2.5rem));
   text-align: center;
   width: 80%;
 }
 
 .slide-one-container .taglines-container .taglines-container-container .tagline-2 {
   margin-top: 10px;
-  font-size: calc(max(4vw, 2rem));
+  font-size: calc(max(2.5vw, 1.5rem));
   text-transform: none;
   text-align: center;
   width: 80%;
@@ -352,14 +352,14 @@ body {
 }
 
 .slide-three-container .taglines-container .tagline {
-  margin-bottom: 4vw;
-  font-size: calc(max(3vw, 1.5rem));
+  margin-bottom: 2vw;
+  font-size: calc(max(2.5vw, 1.5rem));
   width: 60%;
 }
 
 .slide-three-container .taglines-container .tagline-2 {
   font-family: utopia-std-subhead, serif;
-  font-size: calc(max(5vw, 2.5rem));
+  font-size: calc(max(4vw, 2.5rem));
   width: 60%;
 }
 
