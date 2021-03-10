@@ -151,7 +151,7 @@ const SlideTwo = (props) => {
           className="icons-container"
         >
           {num.map((x, index) => {
-            if (index > num.length - 5) {
+            if (index < 4) {
               return (
                 <motion.div
                   variants={iconsVariantsChildFocus}
