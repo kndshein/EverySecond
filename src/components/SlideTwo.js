@@ -1,6 +1,6 @@
 import React from "react";
+// import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-// import { MdPersonPinCircle } from "react-icons/md";
 
 function useOnScreen(options) {
   const [ref, setRef] = React.useState(null);
@@ -27,65 +27,30 @@ function useOnScreen(options) {
   return [setRef, visible];
 }
 
-const variants = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 1,
-      delay: 0,
-    },
-  },
-};
+// function useOnScreen(ref, rootMargin = "0px") {
+//   // State and setter for storing whether element is visible
+//   const [isIntersecting, setIntersecting] = useState(false);
 
-const taglineOneVariants = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 2,
-      delay: 2,
-    },
-  },
-};
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       ([entry]) => {
+//         // Update our state when observer callback fires
+//         setIntersecting(entry.isIntersecting);
+//       },
+//       {
+//         rootMargin,
+//       }
+//     );
+//     if (ref.current) {
+//       observer.observe(ref.current);
+//     }
+//     return () => {
+//       observer.unobserve(ref.current);
+//     };
+//   }, []); // Empty array ensures that effect is only run on mount and unmount
 
-const taglineTwoVariants = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 2,
-      delay: 4,
-    },
-  },
-};
-
-const iconsVariantsContainer = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.002,
-      delayChildren: 6,
-      ease: "easeOut",
-    },
-  },
-};
-
-const iconsVariantsChild = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-  },
-};
-
-const iconsVariantsChildFocus = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: { duration: 2, ease: "easeOut" },
-  },
-};
+//   return isIntersecting;
+// }
 
 const SlideTwo = (props) => {
   var num = [],
@@ -94,6 +59,67 @@ const SlideTwo = (props) => {
   while (++i <= len) num.push(i);
 
   const [setRef, visible] = useOnScreen({ threshold: 0.9 });
+
+  const variants = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: 0,
+      },
+    },
+  };
+
+  const taglineOneVariants = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        delay: 2,
+      },
+    },
+  };
+
+  const taglineTwoVariants = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        duration: 2,
+        delay: 4,
+      },
+    },
+  };
+
+  const iconsVariantsContainer = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.002,
+        delayChildren: 6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const iconsVariantsChild = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+    },
+  };
+
+  const iconsVariantsChildFocus = {
+    initial: { opacity: 0 },
+    animate: {
+      opacity: 1,
+      transition: { duration: 2, ease: "easeOut" },
+    },
+  };
+
   return (
     <div className="slides">
       <motion.div
