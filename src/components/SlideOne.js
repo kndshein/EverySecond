@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const SlideOne = ({ content }) => {
-  console.log(1 + content?.SlideOne.second / 2);
-
   const loaded = () => {
     var num = [],
       i = 0,

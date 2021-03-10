@@ -100,7 +100,7 @@ const SlideFour = ({ content }) => {
               <ul>
                 {content?.SlideFour.educate.map((ele, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <a href={`${ele.link}`} target="_blank" rel="noreferrer">
                         {ele.name} <FiExternalLink className="link" />
                       </a>
@@ -114,7 +114,7 @@ const SlideFour = ({ content }) => {
               <ul>
                 {content?.SlideFour.awareness.map((ele, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <a href={`${ele.link}`} target="_blank" rel="noreferrer">
                         {ele.name} <FiExternalLink className="link" />
                       </a>
@@ -128,7 +128,7 @@ const SlideFour = ({ content }) => {
               <ul>
                 {content?.SlideFour.volunteer.map((ele, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <a href={`${ele.link}`} target="_blank" rel="noreferrer">
                         {ele.name} <FiExternalLink className="link" />
                       </a>
@@ -142,7 +142,7 @@ const SlideFour = ({ content }) => {
               <ul>
                 {content?.SlideFour.financial.map((ele, index) => {
                   return (
-                    <li>
+                    <li key={index}>
                       <a href={`${ele.link}`} target="_blank" rel="noreferrer">
                         {ele.name} <FiExternalLink className="link" />
                       </a>
