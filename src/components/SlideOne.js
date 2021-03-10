@@ -82,6 +82,10 @@ const SlideOne = ({ content }) => {
               alt="poop"
             />
           </div>
+          <div className="scroll-tag">
+            <div>Scroll</div>
+            <div></div>
+          </div>
         </div>
       </div>
     );

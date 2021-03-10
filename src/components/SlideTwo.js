@@ -65,7 +65,7 @@ const iconsVariantsContainer = {
   animate: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.005,
+      staggerChildren: 0.002,
       delayChildren: 6,
       ease: "easeOut",
     },
@@ -83,7 +83,7 @@ const iconsVariantsChildFocus = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
-    transition: { duration: 1, ease: "easeOut" },
+    transition: { duration: 2, ease: "easeOut" },
   },
 };
 
