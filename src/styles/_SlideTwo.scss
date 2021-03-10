@@ -70,18 +70,23 @@
   .slide-two-container {
     .taglines-container {
       width: 100%;
-      padding: 70px 20px 20px 20px;
+      padding: 70px 20px 50px 20px;
       justify-content: center;
+
       .tagline,
       .tagline-2 {
         text-align: center;
         width: 75%;
         text-shadow: 0 0 5px black;
       }
+
+      .tagline {
+        margin-bottom: 50px;
+      }
     }
     .icons-container {
       left: 0;
-      padding: 70px 20px 20px 20px;
+      padding: 70px 20px 50px 20px;
       width: 100%;
     }
   }

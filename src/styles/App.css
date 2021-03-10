@@ -194,7 +194,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .slide-two-container .taglines-container {
-    padding: 70px 20px 20px 20px;
+    padding: 70px 20px 50px 20px;
   }
 }
 
@@ -294,7 +294,7 @@ body {
 @media screen and (max-width: 768px) {
   .slide-two-container .taglines-container {
     width: 100%;
-    padding: 70px 20px 20px 20px;
+    padding: 70px 20px 50px 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -305,9 +305,12 @@ body {
     width: 75%;
     text-shadow: 0 0 5px black;
   }
+  .slide-two-container .taglines-container .tagline {
+    margin-bottom: 50px;
+  }
   .slide-two-container .icons-container {
     left: 0;
-    padding: 70px 20px 20px 20px;
+    padding: 70px 20px 50px 20px;
     width: 100%;
   }
 }
@@ -324,13 +327,13 @@ body {
 }
 
 .scroll-tag .text {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: wheat;
 }
 
 .scroll-tag .bar {
   z-index: 10;
-  height: 50px;
+  height: 40px;
   width: 5px;
   color: wheat;
   background-color: wheat;
