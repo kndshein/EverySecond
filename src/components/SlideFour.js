@@ -112,44 +112,43 @@ const SlideFour = ({ content }) => {
             <motion.div variants={resourcesVariantsChild} className="resource">
               <div className="title">Spread Awareness</div>
               <ul>
-                <li>
-                  <a
-                    href="https://afsp.org/public-policy-action-center#"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Federal bills that need your support{" "}
-                    <FiExternalLink className="link" />
-                  </a>
-                </li>
+                {content?.SlideFour.awareness.map((ele, index) => {
+                  return (
+                    <li>
+                      <a href={`${ele.link}`} target="_blank" rel="noreferrer">
+                        {ele.name} <FiExternalLink className="link" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
             <motion.div variants={resourcesVariantsChild} className="resource">
               <div className="title">Volunteer Your Time</div>
               <ul>
-                <li>
-                  <a href="https://www.crisistextline.org/become-a-volunteer/">
-                    Become a Crisis Counselor{" "}
-                    <FiExternalLink className="link" />
-                  </a>
-                </li>
+                {content?.SlideFour.volunteer.map((ele, index) => {
+                  return (
+                    <li>
+                      <a href={`${ele.link}`} target="_blank" rel="noreferrer">
+                        {ele.name} <FiExternalLink className="link" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
             <motion.div variants={resourcesVariantsChild} className="resource">
               <div className="title">Help Financially</div>
               <ul>
-                <li>
-                  <a href="https://afsp.org/give-a-gift">
-                    American Foundation for Suicide Prevention{" "}
-                    <FiExternalLink className="link" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://suicidepreventionlifeline.org/donate/">
-                    Suicide Prevention Lifeline{" "}
-                    <FiExternalLink className="link" />
-                  </a>
-                </li>
+                {content?.SlideFour.financial.map((ele, index) => {
+                  return (
+                    <li>
+                      <a href={`${ele.link}`} target="_blank" rel="noreferrer">
+                        {ele.name} <FiExternalLink className="link" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </motion.div>
           </motion.div>

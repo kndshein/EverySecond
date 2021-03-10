@@ -62,6 +62,28 @@ function App() {
               "https://save.org/about-suicide/warning-signs-risk-factors-protective-factors/",
           },
         ],
+        awareness: [
+          {
+            name: "Federal bills that need your support",
+            link: "https://afsp.org/public-policy-action-center#",
+          },
+        ],
+        volunteer: [
+          {
+            name: "Become a Crisis Counselor",
+            link: "https://www.crisistextline.org/become-a-volunteer/",
+          },
+        ],
+        financial: [
+          {
+            name: "American Foundation for Suicide Prevention",
+            link: "https://afsp.org/give-a-gift",
+          },
+          {
+            name: "Suicide Prevention Lifeline",
+            link: "https://suicidepreventionlifeline.org/donate/",
+          },
+        ],
       },
     };
 
