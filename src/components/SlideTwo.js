@@ -26,10 +26,10 @@ function useOnScreen(options) {
   return [setRef, visible];
 }
 
-const SlideTwo = (props) => {
+const SlideTwo = ({ content }) => {
   var num = [],
     i = 0,
-    len = 1000;
+    len = content?.SlideTwo.graphic.num2;
   while (++i <= len) num.push(i);
 
   const [setRef, visible] = useOnScreen({ threshold: 0.5 });
@@ -111,14 +111,14 @@ const SlideTwo = (props) => {
             animate={visible ? "animate" : "initial"}
             className="tagline"
           >
-            1.4 million adults in the United States attempted suicide in 2019
+            {content?.SlideTwo.taglineOne}
           </motion.div>
           <motion.div
             variants={taglineTwoVariants}
             animate={visible ? "animate" : "initial"}
             className="tagline-2"
           >
-            that's 4 attempts every 1000 adults
+            {content?.SlideTwo.taglineTwo}
           </motion.div>
         </div>
         <motion.div
@@ -128,7 +128,7 @@ const SlideTwo = (props) => {
           className="icons-container"
         >
           {num.map((x, index) => {
-            if (index < 4) {
+            if (index < content?.SlideTwo.graphic.num1) {
               return (
                 <motion.div
                   variants={iconsVariantsChildFocus}
@@ -137,9 +137,9 @@ const SlideTwo = (props) => {
                   key={index}
                 >
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png"
+                    src={`${content?.SlideTwo.graphic.icon.img}`}
                     key={index}
-                    alt="human symbol"
+                    alt={`${content?.SlideTwo.graphic.icon.alt}`}
                     className="icon"
                     style={{ opacity: "1" }}
                   />
@@ -154,8 +154,8 @@ const SlideTwo = (props) => {
                 key={index}
               >
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png"
-                  alt="human symbol"
+                  src={`${content?.SlideTwo.graphic.icon.img}`}
+                  alt={`${content?.SlideTwo.graphic.icon.alt}`}
                   className="icon"
                 />
               </motion.div>
@@ -164,8 +164,8 @@ const SlideTwo = (props) => {
         </motion.div>
         <div className="background-image">
           <img
-            src="https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-            alt="poop"
+            src={`${content?.SlideTwo.background.img}`}
+            alt={`${content?.SlideTwo.background.alt}`}
           />
         </div>
       </motion.div>

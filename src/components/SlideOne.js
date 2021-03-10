@@ -1,5 +1,4 @@
 import React from "react";
-import { MdPersonPinCircle } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const SlideOne = ({ content }) => {
@@ -55,13 +54,11 @@ const SlideOne = ({ content }) => {
                   }}
                   ease={{ ease: "easeInOut" }}
                 >
-                  2.6
+                  {content?.SlideOne.second}
                 </motion.span>{" "}
                 seconds,
               </div>
-              <div className="tagline-2">
-                somebody in the US is having thoughts of suicide
-              </div>
+              <div className="tagline-2">{content?.SlideOne.tagline}</div>
             </motion.div>
             <motion.div
               className="icons-container"
@@ -71,15 +68,19 @@ const SlideOne = ({ content }) => {
             >
               {num.map((x, index) => (
                 <motion.div variants={item} key={index}>
-                  <MdPersonPinCircle size={50} className="icon" />
+                  <img
+                    className="icon"
+                    src={`${content?.SlideOne.icon.img}`}
+                    alt={`${content?.SlideOne.icon.alt}`}
+                  />
                 </motion.div>
               ))}
             </motion.div>
           </motion.div>
           <div className="background-image">
             <img
-              src="https://images.unsplash.com/photo-1615027138404-06f31c35ae1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-              alt="poop"
+              src={`${content?.SlideOne.background.img}`}
+              alt={`${content?.SlideOne.background.alt}`}
             />
           </div>
         </div>

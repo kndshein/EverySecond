@@ -49,12 +49,13 @@
       align-content: flex-start;
       flex-flow: row wrap;
       width: 50%;
-      height: 250px;
+      height: 300px;
       overflow: hidden;
 
       .icon {
-        width: calc(max(5vw, 30px));
+        width: calc(max(4vw, 30px));
         margin-bottom: calc(max(2vw, 10px));
+        filter: invert(100%);
       }
     }
   }

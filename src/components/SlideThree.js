@@ -26,7 +26,7 @@ function useOnScreen(options) {
   return [setRef, visible];
 }
 
-const SlideThree = (props) => {
+const SlideThree = ({ content }) => {
   const [setRef, visible] = useOnScreen({ threshold: 0.5 });
 
   const variants = {
@@ -88,19 +88,19 @@ const SlideThree = (props) => {
             animate={visible ? "animate" : "initial"}
             className="tagline"
           >
-            there are about 130 fatal suicides per day
+            {content?.SlideThree.taglineOne}
           </motion.div>
           <motion.div
             variants={taglineTwoVariants}
             animate={visible ? "animate" : "initial"}
             className="tagline-2"
           >
-            which is almost{" "}
+            {content?.SlideThree.taglineTwo.tagline}{" "}
             <motion.span
               variants={spanVariants}
               animate={visible ? "animate" : "initial"}
             >
-              6 suicidal deaths every hour
+              {content?.SlideThree.taglineTwo.taglineFocus}
             </motion.span>
           </motion.div>
         </div>
