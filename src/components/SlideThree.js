@@ -100,13 +100,13 @@ const SlideThree = (props) => {
               variants={spanVariants}
               animate={visible ? "animate" : "initial"}
             >
-              6 suicidal deaths per hour
+              6 suicidal deaths every hour
             </motion.span>
           </motion.div>
         </div>
         <div className="background-image">
           <img
-            src="https://images.unsplash.com/photo-1513111168953-34fc252c9279?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80"
+            src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80"
             alt="poop"
           />
         </div>

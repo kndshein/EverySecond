@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import SlideOne from "./components/SlideOne";
 import SlideTwo from "./components/SlideTwo";
 import SlideThree from "./components/SlideThree";
+import SlideFour from "./components/SlideFour";
 import Scrollbar from "./components/ScrollBar";
 
 function App() {
@@ -28,8 +29,7 @@ function App() {
         <SlideOne content={content} />
         <SlideTwo />
         <SlideThree />
-        {/* <SlideThree /> */}
-        {/* <SlideThree /> */}
+        <SlideFour />
       </div>
       <Scrollbar />
     </div>
