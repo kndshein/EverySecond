@@ -32,37 +32,39 @@ const SlideTwo = (props) => {
     len = 1000;
   while (++i <= len) num.push(i);
 
-  const [setRef, visible] = useOnScreen({ threshold: 0.9 });
+  const [setRef, visible] = useOnScreen({ threshold: 0.5 });
 
   const variants = {
     initial: { opacity: 0 },
     animate: {
       opacity: 1,
       transition: {
-        duration: 0.5,
+        duration: 1,
         delay: 0,
       },
     },
   };
 
   const taglineOneVariants = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0, y: 50 },
     animate: {
       opacity: 1,
+      y: 0,
       transition: {
         duration: 2,
-        delay: 2,
+        delay: 1.5,
       },
     },
   };
 
   const taglineTwoVariants = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0, y: 50 },
     animate: {
       opacity: 1,
+      y: 0,
       transition: {
         duration: 2,
-        delay: 4,
+        delay: 3.5,
       },
     },
   };
@@ -73,7 +75,7 @@ const SlideTwo = (props) => {
       opacity: 1,
       transition: {
         staggerChildren: 0.002,
-        delayChildren: 6,
+        delayChildren: 5,
         ease: "easeOut",
       },
     },
@@ -87,9 +89,10 @@ const SlideTwo = (props) => {
   };
 
   const iconsVariantsChildFocus = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0, x: -50 },
     animate: {
       opacity: 1,
+      x: 0,
       transition: { duration: 2, ease: "easeOut" },
     },
   };
