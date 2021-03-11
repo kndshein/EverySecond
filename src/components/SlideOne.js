@@ -54,7 +54,7 @@ const SlideOne = ({ content }) => {
                 >
                   {content?.SlideOne.second}
                 </motion.span>{" "}
-                seconds,
+                {content?.SlideOne.second > 1 ? "seconds," : "second,"}
               </div>
               <div className="tagline-2">{content?.SlideOne.tagline}</div>
             </motion.div>
