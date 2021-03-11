@@ -39,6 +39,7 @@ body {
   cursor: pointer;
   position: absolute;
   left: 0;
+  margin-left: 10px;
 }
 
 .nav-bar-container .arrow-left.none {
@@ -49,6 +50,7 @@ body {
   cursor: pointer;
   position: absolute;
   right: 0;
+  margin-right: 10px;
 }
 
 .nav-bar-container .arrow-right.none {
