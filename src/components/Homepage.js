@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 import SeedData from "../SeedData.json";
 
@@ -12,18 +12,18 @@ const Homepage = (props) => {
     setIsLoading(false);
   }, []);
 
-  return (
-    <>
-      {!isLoading &&
-        content.map((topic, index) => {
-          return (
-            <h1 key={index}>
-              <Link to={`/topic/${index}`}>{topic.title}</Link>
-            </h1>
-          );
-        })}
-    </>
-  );
+  return <Redirect to={`/topic/0`} />;
+  //     <>
+  //       {!isLoading &&
+  //         content.map((topic, index) => {
+  //           return (
+  //             <h1 key={index}>
+  //               <Link to={`/topic/${index}`}>{topic.title}</Link>
+  //             </h1>
+  //           );
+  //         })}
+  //     </>
+  //   );
 };
 
 export default Homepage;

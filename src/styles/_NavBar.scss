@@ -2,15 +2,33 @@
   z-index: 10;
   position: fixed;
   width: 100%;
+  height: 70px;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: white;
 
+  .arrow-left {
+    position: absolute;
+    left: 0;
+
+    &.none {
+      display: none;
+    }
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: 0;
+
+    &.none {
+      display: none;
+    }
+  }
+
   .logo-container {
     display: flex;
-    gap: 15px;
     font-family: $title-font;
     font-size: calc(max(2vw, 1rem));
     text-align: center;
@@ -20,6 +38,7 @@
       content: "";
       height: inherit;
       width: 3px;
+      margin: 0 10px 0 10px;
       background-color: white;
     }
 
