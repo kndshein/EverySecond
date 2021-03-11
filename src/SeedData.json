@@ -154,45 +154,45 @@
     }
   },
   {
-    "title": "TEST",
+    "title": "Oil Industry",
     "SlideOne": {
-      "second": 1,
-      "tagline": "somebody in the US is struggling with hunger",
+      "second": 6,
+      "tagline": "one liter of petroleum is spilled into US waters",
       "icon": {
-        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615440791/Every%20Second/Spoonandfork.png",
-        "alt": "person"
+        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615482234/oilContainer.png",
+        "alt": "oil tank symbol"
       },
       "background": {
-        "img": "https://images.unsplash.com/photo-1596464716004-48206c3f2306?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "alt": "dim room"
+        "img": "https://images.unsplash.com/photo-1541356665065-22676f35dd40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80",
+        "alt": "greasy oil"
       }
     },
     "SlideTwo": {
-      "taglineOne": "Approximately 842 million people suffer from hunger worldwide",
-      "taglineTwo": "that's 12 every 1000 people",
+      "taglineOne": "In 2015, USA produced 12.7 million barrels of crude oil per day",
+      "taglineTwo": "7 of the top 25 oil companies are from the USA",
       "graphic": {
         "icon": {
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png",
-          "alt": "human symbol"
+          "img": "https://res.cloudinary.com/kndshein/image/upload/c_pad,g_center,h_210,w_258/v1615484551/Every%20Second/ClipartKey_157207_fwabnq.png",
+          "alt": "factory symbol"
         },
-        "num1": 4,
-        "num2": 100
+        "num1": 7,
+        "num2": 25
       },
       "background": {
-        "img": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "alt": "city aerial"
+        "img": "https://images.unsplash.com/photo-1483849838745-e8a3304f4eed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "alt": "factories in dim sky"
       }
     },
     "SlideThree": {
-      "taglineOne": "male-dominated social structures limit the resources women have, making them more vulnerable to poverty and hunger",
+      "taglineOne": "On April 20, 2010, an explosion occurred on the Deepwater Horizon drilling platform. Approximately 134 million gallons of oil had spilled into the ocean.",
       "taglineTwo": {
-        "tagline": "",
-        "taglineFocus": "Sixty percent of the world's hungry are women and girls"
+        "tagline": "That is equivalent to the volume of over 200 Olympic-sized swimming pools,",
+        "taglineFocus": "and restoration is still continuing today"
       },
-      "color": "#ffb330",
+      "color": "#31cc58",
       "background": {
-        "img": "https://images.unsplash.com/photo-1579354531298-a5e64d1ff3cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "alt": "person eating pizza"
+        "img": "https://images.unsplash.com/photo-1602951584222-d4c341672120?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "alt": "oil painting on canvas"
       }
     },
     "SlideFour": {
