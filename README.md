@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+https://afsp.org/public-policy-action-center#
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
+### Project Links
 
-In the project directory, you can run:
+- [Frontend - Deployed](https://every-second.netlify.app)
+- [Frontend - Github](https://github.com/kndshein/EverySecond-Frontend)
+- [Backend - Deployed](http://everysecond-backend.herokuapp.com/api/topic)
+- [Backend - Github](https://github.com/kndshein/EverySecond-Backend)
 
-### `yarn start`
+### Project Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A website to spread awareness and provide resources to get involved for various social topics.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Project Planning
 
-### `yarn test`
+### Wireframes
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [MockUp](https://www.figma.com/file/Fz1kvpwRgq2N3C4vfXGwYy/Untitled)
+- [React Architecture](https://docs.google.com/drawings/d/1xE8hDwSR4nobSVnErp3sRjCyZhm-I4ucdB9Huhv-Hz8/edit?usp=sharing)
 
-### `yarn build`
+### User Stories
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- As a user, I can navigate through various social issues.
+- As a user, I can obtain resources to aid aforementioned social issues.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### MVP / Post-MVP
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### Frontend MVP
 
-### `yarn eject`
+| Component                | Priority | Estimated Time | Actual Time |
+| ------------------------ | :------: | :------------: | :---------: |
+| React: Create Components |    H     |     5 hrs      |      2      |
+| React: Routes for API    |    H     |     1 hrs      |     N/A     |
+| React: Mapping API       |    H     |     1 hrs      |      5      |
+| React: Router            |    M     |      1 hr      |     10      |
+| CSS: Design              |    M     |     10 hrs     |     10      |
+| Javascript: Animation    |    L     |     10 hrs     |     15      |
+| Responsive Design        |    L     |     5 hrs      |      5      |
+| **Total**                |          |   **33 hrs**   | **47 hrs**  |
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+##### Frontend Post-MVP
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Component                    | Priority | Estimated Time | Actual Time |
+| ---------------------------- | :------: | :------------: | :---------: |
+| Add Environmental Issue Page |    M     |     10 hrs     |   10 hrs    |
+| Add Oil Industry Page        |    M     |     10 hrs     |    5 hrs    |
+| **Total**                    |          |   **10 hrs**   | **15 hrs**  |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+##### Backend MVP
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Component        | Priority | Estimated Time | Actual Time  |
+| ---------------- | :------: | :------------: | :----------: |
+| Deploy Laravel   |    H     |     2 hrs      |    2 hrs     |
+| Creating Routes  |    H     |     1 hrs      |    2 hrs     |
+| Seeding Data     |    H     |     1 hrs      |    0.5 hr    |
+| Models / Schemas |    H     |     1 hrs      |    10 hrs    |
+| **Total**        |          |   **5 hrs**    | **14.5 hrs** |
 
-## Learn More
+##### Backend Post-MVP
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Component                | Priority | Estimated Time | Actual Time |
+| ------------------------ | :------: | :------------: | :---------: |
+| One to Many Relationship |    H     |     3 hrs      |    5 hrs    |
+| Seed Environmental Issue |    M     |     2 hrs      |     N/A     |
+| **Total**                |          |   **5 hrs**    |  **5 hrs**  |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Time Frames
 
-### Code Splitting
+| **Day**   | **Date**  | **Minimum Frontend**                |
+| --------- | --------- | ----------------------------------- |
+| Monday    | 3/1/2021  | Project Proposal Prep               |
+| Tuesday   | 3/2/2021  | Project Proposal + Laravel Practice |
+| Wednesday | 3/3/2021  | Laravel Setup + Laravel Deploy      |
+| Thursday  | 3/4/2021  | React Deploy + React Setup          |
+| Friday    | 3/5/2021  | Continue Setup + Components         |
+| Saturday  | 3/6/2021  | -------- Break --------             |
+| Sunday    | 3/7/2021  | Components + Animations             |
+| Monday    | 3/8/2021  | -------- Interview Day --------     |
+| Tuesday   | 3/9/2021  | Animations                          |
+| Wednesday | 3/10/2021 | Animations + Responsive Design      |
+| Thursday  | 3/11/2021 | Final Touches                       |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Routes
 
-### Analyzing the Bundle Size
+| **URL**    | **HTTP Verb** | **Action** | **Description** |
+| ---------- | ------------- | ---------- | --------------- |
+| /api/topic | GET           | show       | get all topics  |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Fonts
 
-### Making a Progressive Web App
+- [Park Lane](https://fonts.adobe.com/fonts/park-lane)
+- [Kepler](https://fonts.adobe.com/fonts/kepler)
+- [Utopia](https://fonts.adobe.com/fonts/utopia)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Helpful Links
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://www.youtube.com/watch?v=QD4GcZJObXg
+- https://www.youtube.com/watch?v=T8EYosX4NOo
+- https://github.com/maciekgrzybek/react-section-navigation
+- https://codesandbox.io/s/framer-motion-issue-forked-6no3o?file=/src/App.js:1123-1173
