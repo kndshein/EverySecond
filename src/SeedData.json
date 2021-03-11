@@ -169,7 +169,7 @@
     },
     "SlideTwo": {
       "taglineOne": "In 2015, USA produced 12.7 million barrels of crude oil per day",
-      "taglineTwo": "7 of the top 25 oil companies are from the USA",
+      "taglineTwo": "28% of the top 25 oil companies are from the USA",
       "graphic": {
         "icon": {
           "img": "https://res.cloudinary.com/kndshein/image/upload/c_pad,g_center,h_210,w_258/v1615484551/Every%20Second/ClipartKey_157207_fwabnq.png",
@@ -179,8 +179,8 @@
         "num2": 25
       },
       "background": {
-        "img": "https://images.unsplash.com/photo-1483849838745-e8a3304f4eed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "alt": "factories in dim sky"
+        "img": "https://images.unsplash.com/photo-1573153178631-49e3aa9e018b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80",
+        "alt": "factory at night"
       }
     },
     "SlideThree": {
@@ -189,44 +189,44 @@
         "tagline": "That is equivalent to the volume of over 200 Olympic-sized swimming pools,",
         "taglineFocus": "and restoration is still continuing today"
       },
-      "color": "#31cc58",
+      "color": "#f56c3b",
       "background": {
-        "img": "https://images.unsplash.com/photo-1602951584222-d4c341672120?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "img": "https://images.unsplash.com/photo-1548613112-7455315eef5f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80",
         "alt": "oil painting on canvas"
       }
     },
     "SlideFour": {
       "educate": [
         {
-          "name": "Mercy Corps Quick Facts",
-          "link": "https://www.mercycorps.org/blog/quick-facts-global-hunger"
+          "name": "Understanding oil spills",
+          "link": "https://www.epa.gov/emergency-response/understanding-oil-spills-and-oil-spill-response"
+        },
+        {
+          "name": "Oil Spills' Impact on Marine Life",
+          "link": "https://oceanservice.noaa.gov/facts/oilimpacts.html"
         }
       ],
       "awareness": [
         {
-          "name": "Vote to Feed America",
-          "link": "https://www.feedingamerica.org/take-action/advocate/vote-to-feed-america"
+          "name": "Attend and share resources of oil spill preparedness",
+          "link": "https://gulfseagrant.org/oilspilloutreach/presentations/prioritizing-health-and-oil-spill-preparedness/"
         }
       ],
       "volunteer": [
         {
-          "name": "Rise Against Hunger",
-          "link": "https://www.riseagainsthunger.org/volunteer-opportunities/"
+          "name": "Reduce energy consumption",
+          "link": "https://www.energy.gov/energysaver/save-electricity-and-fuel/appliances-and-electronics/reducing-electricity-use-and-costs"
         }
       ],
       "financial": [
         {
-          "name": "Hunger Free America",
-          "link": "https://hungerfreeamerica.org/en-us/donate"
-        },
-        {
-          "name": "World Vision",
-          "link": "https://donate.worldvision.org/gift-catalog/hunger-relief"
+          "name": "National Wildlife Rehabilitators Association",
+          "link": "https://www.nwrawildlife.org/donations/"
         }
       ],
       "background": {
-        "img": "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-        "alt": "people bagging bags"
+        "img": "https://images.unsplash.com/photo-1546019901-e9bccf605171?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1268&q=80",
+        "alt": "Rocks in green water"
       }
     }
   }
