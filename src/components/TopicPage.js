@@ -40,6 +40,7 @@ const TopicPage = ({ match }) => {
   const [isLoading, setIsLoading] = React.useState(true);
   const [content, setContent] = React.useState(null);
   const [topic, setTopic] = React.useState({ previous: 0, next: 0 });
+  const [resizer, setResizer] = React.useState({ vw: 0, px: 0 });
 
   const handlePrev = () => {
     window.location.assign(`/topic/${topic.previous}`);
@@ -68,6 +69,17 @@ const TopicPage = ({ match }) => {
     };
 
     navArrow();
+
+    const calcSize = (num) => {
+      let vw = 0;
+      let px = 0;
+      vw = Math.round(29.863 * Math.pow(num, -0.479) * 10) / 10;
+      console.log(vw);
+      px = Math.round(298.68 * Math.pow(num, -0.479) * 10) / 10;
+      setResizer({ vw: vw, px: px });
+    };
+
+    calcSize(content?.SlideTwo.graphic.num2);
   }, []);
 
   return (
@@ -82,7 +94,7 @@ const TopicPage = ({ match }) => {
           />
           <div className="slides-container">
             <SlideOne content={content} />
-            <SlideTwo content={content} />
+            <SlideTwo content={content} resizer={resizer} />
             <SlideThree content={content} />
             <SlideFour content={content} setRefTopic={setRefTopic} />
           </div>

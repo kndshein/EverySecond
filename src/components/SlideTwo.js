@@ -31,8 +31,21 @@ const SlideTwo = ({ content }) => {
     i = 0,
     len = content?.SlideTwo.graphic.num2;
   while (++i <= len) num.push(i);
-
   const [setRef, visible] = useOnScreen({ threshold: 0.5 });
+  const [resizer, setResizer] = React.useState({ vw: 0, px: 0 });
+
+  React.useEffect(() => {
+    const calcSize = (num) => {
+      let vw = 0;
+      let px = 0;
+      vw = Math.round(29.863 * Math.pow(num, -0.479) * 10) / 10;
+      console.log(vw);
+      px = Math.round(298.68 * Math.pow(num, -0.479) * 10) / 10;
+      setResizer({ vw: vw, px: px });
+    };
+
+    calcSize(content?.SlideTwo.graphic.num2);
+  }, []);
 
   const variants = {
     initial: { opacity: 0 },
@@ -133,7 +146,9 @@ const SlideTwo = ({ content }) => {
                 <motion.div
                   variants={iconsVariantsChildFocus}
                   className="icon-container"
-                  style={{ width: "min(3vw,15px)" }}
+                  style={{
+                    width: `calc(max(${resizer.vw}vw,${resizer.px}px))`,
+                  }}
                   key={index}
                 >
                   <img
@@ -150,7 +165,7 @@ const SlideTwo = ({ content }) => {
               <motion.div
                 variants={iconsVariantsChild}
                 className="icon-container"
-                style={{ width: "min(3vw,15px)" }}
+                style={{ width: `calc(max(${resizer.vw}vw,${resizer.px}px))` }}
                 key={index}
               >
                 <img

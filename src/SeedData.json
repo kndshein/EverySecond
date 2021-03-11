@@ -5,7 +5,7 @@
       "second": 2.6,
       "tagline": "somebody in the US is having thoughts of suicide",
       "icon": {
-        "img": "https://cdn.iconscout.com/icon/free/png-256/exclamation-mark-2653677-2202673.png",
+        "img": "https://res.cloudinary.com/kndshein/image/upload/c_crop,g_center,h_194,x_0,y_0/v1615474405/Every%20Second/exclamation-mark-2653677-2202673_jjowip.webp",
         "alt": "person"
       },
       "background": {
@@ -18,7 +18,7 @@
       "taglineTwo": "that's 4 attempts every 1000 adults",
       "graphic": {
         "icon": {
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png",
+          "img": "https://res.cloudinary.com/kndshein/image/upload/c_crop,h_210/v1615474719/humanIcon.png",
           "alt": "human symbol"
         },
         "num1": 4,
@@ -175,8 +175,8 @@
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png",
           "alt": "human symbol"
         },
-        "num1": 12,
-        "num2": 1000
+        "num1": 4,
+        "num2": 10
       },
       "background": {
         "img": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",

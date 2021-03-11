@@ -48,14 +48,17 @@
       justify-content: center;
       align-content: flex-start;
       flex-flow: row wrap;
-      width: 50%;
-      height: 300px;
+      width: 60%;
+      // height: 300px;
       overflow: hidden;
 
-      .icon {
-        width: calc(max(4vw, 30px));
+      div {
+        margin: 0 10px 0 10px;
         margin-bottom: calc(max(2vw, 10px));
-        filter: invert(100%);
+        .icon {
+          width: calc(max(3vw, 30px));
+          filter: invert(100%);
+        }
       }
     }
   }
@@ -81,9 +84,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  .slide-two-container {
+  .slide-one-container {
     .taglines-container {
-      padding: 70px 20px 20px 20px;
+      padding: 70px 20px 50px 20px;
     }
   }
 }
