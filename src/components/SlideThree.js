@@ -65,7 +65,7 @@ const SlideThree = ({ content }) => {
   const spanVariants = {
     initial: { color: "#ffffff" },
     animate: {
-      color: "#ad0c0c",
+      color: content?.SlideThree.color,
       transition: {
         duration: 3,
         delay: 4.5,
@@ -106,8 +106,8 @@ const SlideThree = ({ content }) => {
         </div>
         <div className="background-image">
           <img
-            src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80"
-            alt="poop"
+            src={`${content?.SlideThree.background.img}`}
+            alt={`${content?.SlideThree.background.alt}`}
           />
         </div>
       </motion.div>

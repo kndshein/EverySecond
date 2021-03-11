@@ -1,6 +1,6 @@
 [
   {
-    "title": "Suicide Prevention",
+    "title": "Suicide",
     "SlideOne": {
       "second": 2.6,
       "tagline": "somebody in the US is having thoughts of suicide",
@@ -34,6 +34,11 @@
       "taglineTwo": {
         "tagline": "which is almost",
         "taglineFocus": "6 suicidal deaths every hour"
+      },
+      "color": "#de1f2f",
+      "background": {
+        "img": "https://images.unsplash.com/photo-1518893063132-36e46dbe2428?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=675&q=80",
+        "alt": "satin drape"
       }
     },
     "SlideFour": {
@@ -64,75 +69,88 @@
           "name": "Suicide Prevention Lifeline",
           "link": "https://suicidepreventionlifeline.org/donate/"
         }
-      ]
+      ],
+      "background": {
+        "img": "https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1438&q=80",
+        "alt": "person writing"
+      }
     }
   },
   {
-    "title": "test",
+    "title": "Hunger",
     "SlideOne": {
-      "second": 2.6,
-      "tagline": "somebody in the US is having thoughts of suicide",
+      "second": 1,
+      "tagline": "somebody in the US is struggling with hunger",
       "icon": {
-        "img": "https://cdn.iconscout.com/icon/free/png-256/exclamation-mark-2653677-2202673.png",
+        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615440791/Every%20Second/Spoonandfork.png",
         "alt": "person"
       },
       "background": {
-        "img": "https://images.unsplash.com/photo-1615027138404-06f31c35ae1d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "img": "https://images.unsplash.com/photo-1596464716004-48206c3f2306?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         "alt": "dim room"
       }
     },
     "SlideTwo": {
-      "taglineOne": "1.4 million adults in the United States attempted suicide in 2019",
-      "taglineTwo": "that's 4 attempts every 1000 adults",
+      "taglineOne": "Approximately 842 million people suffer from hunger worldwide",
+      "taglineTwo": "that's 12 every 1000 people",
       "graphic": {
         "icon": {
           "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png",
           "alt": "human symbol"
         },
-        "num1": 4,
+        "num1": 12,
         "num2": 1000
       },
       "background": {
-        "img": "https://images.unsplash.com/photo-1483653085484-eb63c9f02547?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "img": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         "alt": "city aerial"
       }
     },
     "SlideThree": {
-      "taglineOne": "there are about 130 fatal suicides per day",
+      "taglineOne": "male-dominated social structures limit the resources women have, making them more vulnerable to poverty and hunger",
       "taglineTwo": {
-        "tagline": "which is almost",
-        "taglineFocus": "6 suicidal deaths every hour"
+        "tagline": "",
+        "taglineFocus": "Sixty percent of the world's hungry are women and girls"
+      },
+      "color": "#ffb330",
+      "background": {
+        "img": "https://images.unsplash.com/photo-1579354531298-a5e64d1ff3cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "alt": "person eating pizza"
       }
     },
     "SlideFour": {
       "educate": [
         {
-          "name": "Suicide Awareness Voices of Education",
-          "link": "https://save.org/about-suicide/warning-signs-risk-factors-protective-factors/"
+          "name": "Mercy Corps Quick Facts",
+          "link": "https://www.mercycorps.org/blog/quick-facts-global-hunger"
         }
       ],
       "awareness": [
         {
-          "name": "Federal bills that need your support",
-          "link": "https://afsp.org/public-policy-action-center#"
+          "name": "Vote to Feed America",
+          "link": "https://www.feedingamerica.org/take-action/advocate/vote-to-feed-america"
         }
       ],
       "volunteer": [
         {
-          "name": "Become a Crisis Counselor",
-          "link": "https://www.crisistextline.org/become-a-volunteer/"
+          "name": "Rise Against Hunger",
+          "link": "https://www.riseagainsthunger.org/volunteer-opportunities/"
         }
       ],
       "financial": [
         {
-          "name": "American Foundation for Suicide Prevention",
-          "link": "https://afsp.org/give-a-gift"
+          "name": "Hunger Free America",
+          "link": "https://hungerfreeamerica.org/en-us/donate"
         },
         {
-          "name": "Suicide Prevention Lifeline",
-          "link": "https://suicidepreventionlifeline.org/donate/"
+          "name": "World Vision",
+          "link": "https://donate.worldvision.org/gift-catalog/hunger-relief"
         }
-      ]
+      ],
+      "background": {
+        "img": "https://images.unsplash.com/photo-1593113646773-028c64a8f1b8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+        "alt": "people bagging bags"
+      }
     }
   }
 ]

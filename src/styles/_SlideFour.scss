@@ -33,9 +33,43 @@
 
       .resource {
         margin-bottom: calc(max(2vw, 15px));
+        position: relative;
+
         .title {
           font-family: $title-font;
           font-size: calc(max(2.5vw, 1.5rem));
+        }
+
+        #educate,
+        #awareness,
+        #volunteer,
+        #financial {
+          &::before {
+            content: "1";
+            position: absolute;
+            color: rgba(255, 255, 255, 0.1);
+            font-size: calc(max(8vw, 3rem));
+            left: -3vw;
+            top: -3vw;
+          }
+        }
+
+        #awareness {
+          &::before {
+            content: "2";
+          }
+        }
+
+        #volunteer {
+          &::before {
+            content: "3";
+          }
+        }
+
+        #financial {
+          &::before {
+            content: "4";
+          }
         }
 
         ul {

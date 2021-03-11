@@ -10,7 +10,31 @@ import SlideThree from "./SlideThree";
 import SlideFour from "./SlideFour";
 import Scrollbar from "./ScrollBar";
 
+function useOnScreen(options) {
+  const [refTopic, setRefTopic] = React.useState(null);
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setVisible(entry.isIntersecting);
+    }, options);
+
+    if (refTopic) {
+      observer.observe(refTopic);
+    }
+
+    return () => {
+      if (refTopic) {
+        observer.unobserve(refTopic);
+      }
+    };
+  }, [refTopic, options, visible]);
+
+  return [setRefTopic, visible];
+}
+
 const TopicPage = ({ match }) => {
+  const [setRefTopic, visible] = useOnScreen({ threshold: 0.5 });
   const params = useParams();
 
   const [isLoading, setIsLoading] = React.useState(true);
@@ -60,9 +84,9 @@ const TopicPage = ({ match }) => {
             <SlideOne content={content} />
             <SlideTwo content={content} />
             <SlideThree content={content} />
-            <SlideFour content={content} />
+            <SlideFour content={content} setRefTopic={setRefTopic} />
           </div>
-          <Scrollbar />
+          <Scrollbar visible={visible} />
         </>
       )}
     </>
