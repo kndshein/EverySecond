@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import SeedData from "../SeedData.json";
 
@@ -17,23 +17,32 @@ const TopicPage = ({ match }) => {
   const [content, setContent] = React.useState(null);
   const [topic, setTopic] = React.useState({ previous: 0, next: 0 });
 
-  const navArrow = () => {
-    let prev = 0;
-    let next = 0;
+  const handlePrev = () => {
+    window.location.assign(`/topic/${topic.previous}`);
+  };
 
-    if (parseInt(params.topicId) === SeedData.length - 1) {
-      prev = parseInt(params.topicId) - 1;
-      next = -1;
-    } else {
-      prev = parseInt(params.topicId) - 1;
-      next = parseInt(params.topicId) + 1;
-    }
-    setTopic({ previous: prev, next: next });
+  const handleNext = () => {
+    window.location.assign(`/topic/${topic.next}`);
   };
 
   React.useEffect(() => {
     setContent(SeedData[params.topicId]);
     setIsLoading(false);
+
+    const navArrow = () => {
+      let prev = 0;
+      let next = 0;
+
+      if (parseInt(params.topicId) === SeedData.length - 1) {
+        prev = parseInt(params.topicId) - 1;
+        next = -1;
+      } else {
+        prev = parseInt(params.topicId) - 1;
+        next = parseInt(params.topicId) + 1;
+      }
+      setTopic({ previous: prev, next: next });
+    };
+
     navArrow();
   }, []);
 
@@ -41,7 +50,12 @@ const TopicPage = ({ match }) => {
     <>
       {!isLoading && (
         <>
-          <Nav content={content} topic={topic} />
+          <Nav
+            content={content}
+            topic={topic}
+            handleNext={handleNext}
+            handlePrev={handlePrev}
+          />
           <div className="slides-container">
             <SlideOne content={content} />
             <SlideTwo content={content} />

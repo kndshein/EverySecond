@@ -10,6 +10,7 @@
   color: white;
 
   .arrow-left {
+    cursor: pointer;
     position: absolute;
     left: 0;
 
@@ -19,6 +20,7 @@
   }
 
   .arrow-right {
+    cursor: pointer;
     position: absolute;
     right: 0;
 
