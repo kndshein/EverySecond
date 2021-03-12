@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-family: nimbus-sans, sans-serif;
   font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
@@ -62,6 +63,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-family: utopia-std-subhead, serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: calc(max(2vw, 1rem));
   text-align: center;
 }
@@ -77,6 +80,8 @@ body {
 
 .nav-bar-container .logo-container .logo-tagline {
   font-family: nimbus-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .slides-container {
@@ -160,6 +165,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: utopia-std-subhead, serif;
+  font-style: italic;
+  font-weight: 700;
   font-size: calc(max(4vw, 2.5rem));
   text-align: center;
   width: 80%;
@@ -272,6 +279,8 @@ body {
 
 .slide-two-container .taglines-container .tagline-2 {
   font-family: utopia-std-subhead, serif;
+  font-weight: 700;
+  font-style: italic;
   font-size: calc(max(4vw, 2.5rem));
   width: 50%;
 }
@@ -402,6 +411,8 @@ body {
 
 .slide-three-container .taglines-container .tagline-2 {
   font-family: utopia-std-subhead, serif;
+  font-style: italic;
+  font-weight: 700;
   font-size: calc(max(4vw, 2.5rem));
   width: 60%;
 }
@@ -463,11 +474,11 @@ body {
   position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 15% 85%;
-      grid-template-rows: 15% 85%;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
   width: 100%;
   height: 100%;
-  padding: 100px 30px 80px 30px;
+  padding: 100px 30px 30px 30px;
 }
 
 .slide-four-container .resources-container .tagline {
@@ -482,8 +493,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: nimbus-sans, sans-serif;
-  font-size: calc(max(4vw, 2rem));
+  font-size: calc(max(3.5vw, 1.75rem));
   text-align: center;
 }
 
@@ -516,6 +526,8 @@ body {
 
 .slide-four-container .resources-container .resources .resource .title {
   font-family: utopia-std-subhead, serif;
+  font-style: italic;
+  font-weight: 700;
   font-size: calc(max(2.5vw, 1.5rem));
 }
 
@@ -553,7 +565,6 @@ body {
 }
 
 .slide-four-container .resources-container .resources .resource ul li a {
-  font-family: nimbus-sans, sans-serif;
   text-decoration: none;
   color: white;
   font-size: 1.25rem;
@@ -586,6 +597,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .slide-four-container .resources-container {
+    padding: 70px 20px 20px 20px;
+  }
   .slide-four-container .resources-container .resources {
     width: 90%;
   }

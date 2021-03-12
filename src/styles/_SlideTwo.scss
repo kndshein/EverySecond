@@ -24,6 +24,8 @@
 
     .tagline-2 {
       font-family: $title-font;
+      font-weight: 700;
+      font-style: italic;
       font-size: calc(max(4vw, 2.5rem));
       width: 50%;
     }
