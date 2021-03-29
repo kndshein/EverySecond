@@ -46,7 +46,7 @@ const SlideThree = ({ content }) => {
       opacity: 1,
       transition: {
         duration: 2,
-        delay: 1.5,
+        delay: 1,
       },
     },
   };
@@ -57,7 +57,7 @@ const SlideThree = ({ content }) => {
       opacity: 1,
       transition: {
         duration: 2,
-        delay: 3.5,
+        delay: 3,
       },
     },
   };
@@ -67,7 +67,7 @@ const SlideThree = ({ content }) => {
     animate: {
       color: content?.SlideThree.color,
       transition: {
-        duration: 3,
+        duration: 2,
         delay: 4.5,
         ease: "easeInOut",
       },

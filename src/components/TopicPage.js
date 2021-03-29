@@ -33,7 +33,7 @@ function useOnScreen(options) {
   return [setRefTopic, visible];
 }
 
-const TopicPage = ({ match }) => {
+const TopicPage = () => {
   const [setRefTopic, visible] = useOnScreen({ threshold: 0.5 });
   const params = useParams();
 

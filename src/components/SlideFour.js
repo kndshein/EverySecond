@@ -47,7 +47,7 @@ const SlideFour = ({ content, setRefTopic }) => {
       opacity: 1,
       transition: {
         duration: 2,
-        delay: 1.5,
+        delay: 1,
       },
     },
   };
@@ -58,7 +58,7 @@ const SlideFour = ({ content, setRefTopic }) => {
       opacity: 1,
       transition: {
         staggerChildren: 1.5,
-        delayChildren: 3.5,
+        delayChildren: 2.5,
       },
     },
   };

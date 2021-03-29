@@ -65,7 +65,7 @@ const SlideTwo = ({ content }) => {
       y: 0,
       transition: {
         duration: 2,
-        delay: 1.5,
+        delay: 1,
       },
     },
   };
@@ -77,7 +77,7 @@ const SlideTwo = ({ content }) => {
       y: 0,
       transition: {
         duration: 2,
-        delay: 3.5,
+        delay: 3,
       },
     },
   };
@@ -88,7 +88,7 @@ const SlideTwo = ({ content }) => {
       opacity: 1,
       transition: {
         staggerChildren: 0.002,
-        delayChildren: 5.5,
+        delayChildren: 5,
         ease: "easeOut",
       },
     },
@@ -106,7 +106,7 @@ const SlideTwo = ({ content }) => {
     animate: {
       opacity: 1,
       x: 0,
-      transition: { duration: 3, delay: 5.5, ease: "easeOut" },
+      transition: { duration: 3, delay: 5, ease: "easeOut" },
     },
   };
 
