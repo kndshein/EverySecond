@@ -5,7 +5,7 @@
       "second": 2.6,
       "tagline": "somebody in the US is having thoughts of suicide",
       "icon": {
-        "img": "https://res.cloudinary.com/kndshein/image/upload/c_crop,g_center,h_195,w_216/v1615474405/exclamationMark.webp",
+        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615474405/Every%20Second/Suicide%20Prevention/exclamationMark.webp",
         "alt": "person"
       },
       "background": {
@@ -18,7 +18,7 @@
       "taglineTwo": "that's 4 attempts every 1000 adults",
       "graphic": {
         "icon": {
-          "img": "https://res.cloudinary.com/kndshein/image/upload/c_crop,h_210/v1615474719/humanIcon.png",
+          "img": "https://res.cloudinary.com/kndshein/image/upload/v1615474719/Every%20Second/Suicide%20Prevention/humanIcon.png",
           "alt": "human symbol"
         },
         "num1": 4,
@@ -82,7 +82,7 @@
       "second": 1,
       "tagline": "somebody in the US is struggling with hunger",
       "icon": {
-        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615440791/Every%20Second/Spoonandfork.png",
+        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615440791/Every%20Second/Hunger%20Awareness/spoonFork.png",
         "alt": "person"
       },
       "background": {
@@ -95,7 +95,7 @@
       "taglineTwo": "that's 12 every 1000 people",
       "graphic": {
         "icon": {
-          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Person_icon_BLACK-01.svg/225px-Person_icon_BLACK-01.svg.png",
+          "img": "https://res.cloudinary.com/kndshein/image/upload/v1615474719/Every%20Second/Suicide%20Prevention/humanIcon.png",
           "alt": "human symbol"
         },
         "num1": 12,
@@ -159,7 +159,7 @@
       "second": 6,
       "tagline": "one liter of petroleum is spilled into US waters",
       "icon": {
-        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615482234/oilContainer.png",
+        "img": "https://res.cloudinary.com/kndshein/image/upload/v1615482234/Every%20Second/Oil%20Industry/oilContainer.png",
         "alt": "oil tank symbol"
       },
       "background": {
@@ -172,7 +172,7 @@
       "taglineTwo": "28% of the top 25 oil companies are from the USA",
       "graphic": {
         "icon": {
-          "img": "https://res.cloudinary.com/kndshein/image/upload/c_pad,g_center,h_210,w_258/v1615484551/Every%20Second/ClipartKey_157207_fwabnq.png",
+          "img": "https://res.cloudinary.com/kndshein/image/upload/v1615484551/Every%20Second/Oil%20Industry/factory.png",
           "alt": "factory symbol"
         },
         "num1": 7,
